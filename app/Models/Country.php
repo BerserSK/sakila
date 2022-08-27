@@ -16,7 +16,7 @@ class Country extends Model
     use HasFactory;
 
     //Relacion entre Country y City
-    public function inventarios(){
+    public function ciudades(){
         return $this->hasMany(City::class, 'country_id');
     }
 }

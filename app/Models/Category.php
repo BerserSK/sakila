@@ -24,8 +24,8 @@ class Category extends Model
         //4 la FK del modelo la relacionar en el pivot 
         return $this->belongsToMany(Film::class,
             'film_category',
-            'film_id',
-            'category_id'
+            'category_id',
+            'film_id'
         )->withPivot('last_update');
     }
 }

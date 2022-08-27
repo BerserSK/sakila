@@ -29,7 +29,7 @@ class Film extends Model
         //4 la FK del modelo la relacionar en el pivot 
         return $this->belongsToMany(Category::class,
             'film_category',
-            'film_id ',
+            'film_id',
             'category_id'
         )->withPivot('last_update');
     }
@@ -37,8 +37,8 @@ class Film extends Model
     public function actores(){
         return $this->belongsToMany(Actor::class,
             'film_actor',
-            'actor_id',
-            'film_id'
+            'film_id',
+            'actor_id'
         )->withPivot('last_update');
     }
 }

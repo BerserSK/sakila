@@ -7,9 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 class Actor extends Model
 {
     //La tabla con la cual el modelo se relaciona
-    protected $table = "film";
+    protected $table = "actor";
     //La clave primaria de la tabla
-    protected $primaryKey="film_id";
+    protected $primaryKey="actor_id";
     //anular campos de auditoria
     public $timestamps = false;
     //Aditamento llenar la base de datos con campos de ejemplos (Faker)
